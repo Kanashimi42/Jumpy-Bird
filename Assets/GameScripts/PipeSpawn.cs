@@ -24,7 +24,6 @@ public class PipeSpawn : MonoBehaviour
     {
         moveSpeed.moveSpeed = 5f;
         SpawnPipe();
-        Debug.Log($"Initial Difficulty Rate: {difficultyRate}");
     }
 
     void Update()
@@ -35,8 +34,8 @@ public class PipeSpawn : MonoBehaviour
             return;
         }
 
-        HandleDifficultyTimer();
         HandleSpawnTimer();
+        HandleDifficultyTimer();
     }
 
     private void HandlePauseTimer()
